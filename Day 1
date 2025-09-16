@@ -1,0 +1,57 @@
+1. -----------------------Check Palindrome---------------------------------- 
+
+def Palindrome(s):
+    l=0
+    r=len(s)-1
+    while l<r:
+        if s[l]!=s[r]:
+            return False
+            l+=1
+            r-=1
+        return true
+
+
+2. ---------------------- String Duplicate Removal------------------------------
+
+class Solution:
+  def removeDuplicates(self, s):
+	    seen_characters=set()
+	    result=[]
+	    for char in s:
+	        if char not in seen_characters:
+	            seen_characters.add(char)
+	            result.append(char)
+	    return "".join(result)
+
+
+
+3.----------------------------------String Functions------------------------------------
+
+def trim(str):
+    return str.strip()     # removes whitespaces at beginning and ending 
+
+
+def exists(str, x):
+    return str.find(x)     # checks if a substring present in string and return the first occurence 
+
+
+def titleIt(str):
+    return str.title()
+
+
+def casesSwap(str):
+    return str.swapcase()
+
+
+4.----------------------------------Repeat The String -----------------------------------------
+
+def combo_string(a, b):
+    a_len=len(a)
+    b_len=len(b)
+    if a_len<b_len:
+        short=a
+        longer=b
+    else:
+        short,longer=b,a
+
+    return short + longer + short
