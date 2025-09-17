@@ -1,3 +1,45 @@
 6.----------------------Maximum of 2 numbers----------------------------------
+# using max function
+num1=int(input("Enter Num 1:"))
+num2=int(input("Enter NUm 2:"))
+print(max(num1,num2))
 
-def maximum_numbers
+# using sort function
+num1=int(input("Enter Num 1:"))
+num2=int(input("Enter NUm 2:"))
+num=[num1,num2]
+num.sort()
+print(num[-1])
+
+# using if conditions
+if num1 > num2 :
+  print(num1)
+else:
+  print(num2)
+
+
+
+7.--------------------------------Compounf Interest----------------------------------------------
+
+# using pow function
+def compound_interest(principal,rate,time):
+  Amount=principal*((pow(1+rate/100),time))
+  ci=Amount-principal
+  print(ci)
+principal=float(input("Enter the Principal Amount :"))
+rate=float(input("Enter the rate of interest :"))
+time=float(input("Enter the duration:"))
+compound_interest(principal,rate,time)
+
+# without using pow function
+def compound_interest(principal,rate,time):
+  a=p*(1+(r/100))**t)
+  ci=a-p
+  print(ci)
+p=float(input("Enter the Principal Amount :"))
+r=float(input("Enter the rate of interest :"))
+t=float(input("Enter the duration:"))
+
+
+
+
